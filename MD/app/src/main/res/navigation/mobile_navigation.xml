@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="mk14.first.eatright.activity.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+    <action
+        android:id="@+id/action_homeFragment_to_reminderPageFragment"
+        app:destination="@id/reminderPageFragment"/>
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/homefragmen_to_Scan"
+            app:destination="@id/navigation_scan" />
+    </fragment>
+    
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="mk14.first.eatright.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/reminderPageFragment"
+        android:name="mk14.first.eatright.activity.reminder.ReminderPageFragment"
+        android:label="Reminder Page"
+        tools:layout="@layout/fragment_reminder_page" />
+</navigation>

@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="Isi Kuisioner Dibawah"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/prblm"
+        />
+
+    <LinearLayout
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+    <LinearLayout
+        android:id="@+id/AgeL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <!-- Age -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Umur"
+            android:textSize="18sp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/black"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contoh1">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/age_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/GenderL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Gender"
+            android:paddingBottom="4dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/roPria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:textColor="@color/black"
+                android:text="Pria" />
+
+            <RadioButton
+                android:id="@+id/roWanita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wanita"
+                android:textColor="@color/black"
+                android:layout_margin="3dp"
+                android:padding="10dp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+        <!-- Height -->
+    <LinearLayout
+        android:id="@+id/HeighL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Height"
+            android:paddingBottom="4dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contoh2">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/height_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/WeightL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <!-- Weight -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Weight"
+            android:paddingBottom="4dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/contoh4">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/weight_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/black"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+    <LinearLayout
+        android:id="@+id/CALCL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- CALC -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Alcohol"
+            android:paddingBottom="4dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+        <RadioGroup
+            android:id="@+id/rgCALC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RadioButton
+                android:id="@+id/roNever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:layout_margin="3dp"
+                android:text="@string/No" />
+
+            <RadioButton
+                android:id="@+id/roRarely"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Rarely"
+                android:textColor="@color/black"
+                android:layout_margin="3dp"
+                android:padding="10dp"
+                />
+            <RadioButton
+                android:id="@+id/roOften"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/Sometimes"
+                android:layout_margin="3dp"
+                android:padding="10dp"
+                />
+            <RadioButton
+                android:id="@+id/roAlways"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/Always"
+                android:layout_margin="3dp"
+                android:padding="10dp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+        <!-- FAVC -->
+    <LinearLayout
+        android:id="@+id/FAVCL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Calories"
+            android:paddingBottom="4dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+        <RadioGroup
+            android:id="@+id/rgFAVC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <RadioButton
+            android:id="@+id/roYesFAVC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:layout_margin="3dp"
+            android:text="Ya" />
+
+        <RadioButton
+            android:id="@+id/roNoFAVC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Tidak"
+            android:layout_margin="3dp"
+            android:padding="10dp"
+            />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/FCVCL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- FCVC -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Veg"
+            android:paddingBottom="4dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+        <RadioGroup
+            android:id="@+id/rgFCVC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RadioButton
+                android:id="@+id/ro1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:layout_margin="3dp"
+                android:text="@string/No" />
+
+            <RadioButton
+                android:id="@+id/ro2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Sometimes"
+                android:textColor="@color/black"
+                android:layout_margin="3dp"
+                android:padding="10dp"
+                />
+            <RadioButton
+                android:id="@+id/ro3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/Always"
+                android:layout_margin="3dp"
+                android:padding="10dp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/NCPL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- NCP -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Meal"
+            android:paddingBottom="4dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Contoh5">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ncp_input"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/num3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+    <LinearLayout
+        android:id="@+id/SCCL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- SCC -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Kal"
+            android:paddingBottom="4dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            />
+        <RadioGroup
+            android:id="@+id/rgSCC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/roYes"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="3dp"
+                android:text="Ya" />
+
+            <RadioButton
+                android:id="@+id/roNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Tidak"
+                android:layout_margin="3dp"
+                android:padding="10dp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SMKL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- SMK -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Smok"
+                android:paddingBottom="4dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+            <RadioGroup
+                android:id="@+id/rgSmoke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/roSmokeYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:padding="10dp"
+                    android:layout_margin="3dp"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/roSmokeNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Tidak"
+                    android:layout_margin="3dp"
+                    android:padding="10dp"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/WATL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- WAT -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Wat"
+                android:paddingBottom="4dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Contoh5">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/CH20_input"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/OBSL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- OBS -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/OBS"
+                android:paddingBottom="4dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+            <RadioGroup
+                android:id="@+id/rgOBS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <RadioButton
+                    android:id="@+id/roOBSYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    android:text="Ya" />
+
+                <RadioButton
+                    android:id="@+id/roOBSNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tidak"
+                    android:textColor="@color/black"
+                    android:layout_margin="3dp"
+                    android:padding="10dp"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/num4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <LinearLayout
+            android:id="@+id/FAFL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- FAF -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/FAF"
+                android:paddingBottom="4dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Contoh5">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/FAF_input"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/TUEL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- TUE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/TUE"
+                android:paddingBottom="4dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/contoh6">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/TUE_input"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/CAECL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- CAEC -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/CAEC"
+                android:paddingBottom="4dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                />
+            <RadioGroup
+                android:id="@+id/rgCAEC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/roCAECNever"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    android:text="@string/No" />
+
+                <RadioButton
+                    android:id="@+id/roCAECRarely"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/Rarely"
+                    android:layout_margin="3dp"
+                    android:padding="10dp"
+                    />
+                <RadioButton
+                    android:id="@+id/roCAECOften"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/Sometimes"
+                    android:layout_margin="3dp"
+                    android:padding="10dp"
+                    />
+                <RadioButton
+                    android:id="@+id/roCAECAlways"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/Always"
+                    android:layout_margin="3dp"
+                    android:padding="10dp"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MTRANSL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- MTRANS -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/MTRANS"
+                android:paddingBottom="4dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                />
+            <RadioGroup
+                android:id="@+id/rgMTRANS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/roWalking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/black"
+                    android:text="Jalan Kaki"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/roBike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Sepeda"
+                    android:layout_margin="3dp"
+                    android:padding="10dp"
+                    tools:ignore="HardcodedText" />
+                <RadioButton
+                    android:id="@+id/roMotorbike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Sepeda Motor"
+                    android:layout_margin="3dp"
+                    android:padding="10dp"
+                    tools:ignore="HardcodedText" />
+                <RadioButton
+                    android:id="@+id/roCar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Mobil"
+                    android:layout_margin="3dp"
+                    android:padding="10dp"
+                    tools:ignore="HardcodedText" />
+                <RadioButton
+                    android:id="@+id/roPT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Angkutan Umum"
+                    android:layout_margin="3dp"
+                    android:padding="10dp"
+                    tools:ignore="HardcodedText" />
+                <RadioButton
+                    android:id="@+id/roOther"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Other"
+                    android:layout_margin="3dp"
+                    android:padding="10dp"
+                    tools:ignore="HardcodedText" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="125dp"
+        android:background="@color/prblm"
+        android:text="Submit"
+        tools:ignore="HardcodedText"
+
+        />
+</LinearLayout>
+</ScrollView>
+

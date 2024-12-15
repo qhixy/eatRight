@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">EatRight</string>
+    <string name="dafta">Daftar Sekarang</string>
+    <string name="masuk">Masuk</string>
+    <string name="Send">Kirim</string>
+    <string name="Skip">LEWATI</string>
+    <string name="title_menu_1">Mulai Perjalanan Hidup Sehatmu Hari Ini!</string>
+    <string name="title_menu_2">Panduan Nutrisi di Ujung Jari</string>
+    <string name="title_menu_3">Teman Setia Gaya Hidup Sehat</string>
+    <string name="desc_menu_1">Kami hadir untuk membantu Anda mengelola makanan  nutrisi dengan bijak, mendukung pola hidup sehat yang sesuai dengan kebutuhan harian Anda.</string>
+    <string name="desc_menu_2">Dapatkan panduan gizi yang sesuai dengan kebutuhan harian Anda, hanya dalam beberapa langkah mudah.</string>
+    <string name="desc_menu_3">Dengan EatRight, ciptakan kebiasaan makan sehat yang sesuai dengan tujuan hidup Anda</string>
+    <string name="learn_now">Belajar Sekarang</string>
+    <string name="title_home">Home</string>
+    <string name="title_camera">Scan</string>
+    <string name="title_profile">Profile</string>
+    <string name="user">Hai, Dio Syahputra</string>
+
+    <string name="Selanjutnya">Selanjutnya</string>
+    <string name="Back">Kembali</string>
+    <string name="BB">Berat badan (kg)</string>
+    <string name="TB">Tinggi badan (cm)</string>
+    <string name="HW">Tinggi dan Berat badan kamu</string>
+    <string name="AC">Sudah ada akun? </string>
+    <string name="NC">Belum ada akun? </string>
+    <string name="Ulang">Ulangi kata sandi</string>
+    <string name="Check">Sudah ada akun? </string>
+    <string name="selamat_datang">Selamat Datang !</string>
+    <string name="silahkan_masuk">Silahkan Masukkan email dan password kamu !</string>
+    <string name="masukkan_email">Masukkan Email</string>
+    <string name="kata_sandi">Kata Sandi</string>
+    <string name="BA">Daftar Sekarang</string>
+    <!--    Bio User-->
+    <string name="Gender">Masukkan jenis kelamin Anda.</string>
+    <string name="contoh2">175 (cm)</string>
+    <string name="Height">Masukkan Tinggi Anda (cm).</string>
+    <string name="contoh3">(Contoh. 20)</string>
+    <string name="Weight">Masukkan Berat Anda (kg).</string>
+    <string name="contoh4">55 (kg)</string>
+    <string name="Alcohol">Seberapa sering Anda mengonsumsi Alkohol ?.</string>
+    <string name="No">Tidak Pernah.</string>
+    <string name="Rarely">Jarang-Jarang.</string>
+    <string name="Sometimes">Sesekali.</string>
+    <string name="Always">Sering.</string>
+    <string name="Calories">Apakah Anda sering mengonsumsi makanan berkalori tinggi? (e.g., Ya atau tidak).</string>
+    <string name="Veg">Seberapa sering Anda mengonsumsi sayuran dalam makanan Anda?.</string>
+    <string name="Meal">Berapa banyak makanan utama yang Anda makan setiap hari?.</string>
+    <string name="Contoh5">"(Contoh: 2)"</string>
+    <string name="Kal">Apakah Anda memantau kalori yang Anda makan setiap hari? (e.g., Ya atau Tidak)</string>
+    <string name="Smok">Apakah kamu merokok? (e.g., Ya atau Tidak).</string>
+    <string name="Wat">Berapa liter air yang Anda minum setiap hari? (Masukkan nilai numerik).</string>
+    <string name="OBS">Apakah Anda memiliki anggota keluarga yang menderita atau menderita kelebihan berat badan? (e.g., Ya atau Tidak).</string>
+    <string name="TUE">Berapa jam per hari yang Anda habiskan untuk menggunakan perangkat teknologi? (Masukkan nilai numerik).</string>
+    <string name="FAF">Berapa jam aktivitas fisik yang Anda lakukan setiap minggu? (Masukkan nilai numerik).</string>
+    <string name="contoh6">(Contoh. 5)</string>
+    <string name="CAEC">Apakah Anda makan makanan apa pun di antara waktu makan?.</string>
+    <string name="MTRANS">Apa moda transportasi yang biasa Anda gunakan?</string>
+    <string name="Umur">Masukkan Umur Anda.</string>
+    <string name="contoh1">(Contoh. 20)</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
